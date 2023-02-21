@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+:root {
+    --cor-fundo: #00030C;
+    --cor-principal: #FFFFFF;
+    --cor-secundaria: #c0c0c0;
+    --cor-botao: #167BF7;
+    --fonte-principal: 'Inter', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-principal);
+    font-family: var(--fonte-principal);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.principal {
+    background-image: url(/image/Background.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container__caixa {
+    margin: 0 6em;
+}
+
+.container__titulo {
+    font-weight: 700;
+    font-size: 1.75rem;
+}
+
+.container__img {
+    margin: 1em 0 2em 0;
+}
+
+.container__botao {
+    display: block; 
+    margin-bottom: 1em; 
+    background-color: var(--cor-botao); 
+    border-radius: 8px; 
+    padding: 1rem; 
+    color: var(--cor-principal);
+    text-decoration: none;
+}
+
+.botao_secundario {
+    background-color: transparent;
+    border: 2px solid var(--cor-principal);
+}
+
+.container__aviso {
+    font-size: 0.75rem;
+    color: var(--cor-secundaria);
+}
+
+.secundario__imagem {
+    width: 80%;
+}
+
+.secundario {
+    align-items: center;
+    margin: 0 10em;
+}
+
+.descricao__titulo {
+    font-weight: 700;
+    font-size: 3rem;
+    margin-bottom: 0.1em;
+    color: var(--cor-principal);
+}
+
+.descricao__texto {
+    color: var(--cor-secundaria);
+}
+
+.secundario__botao {
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.container__descricao {
+    padding: 2em;
+}
+
+.dispositivos {
+    text-align: center;
+}
+
+.dispositivos__titulo {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--cor-principal);
+}
+
+.dispositivos__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    color: var(--cor-principal);
+    margin: 2.5rem 0;
+}
+
+.rodape {
+    text-align: center;
+    margin: 9rem 9.8rem 5rem 9.8rem;
+}
+
+.rodape__lista {
+    display: flex;
+    justify-content: space-around;
+    margin: 2.5rem 0;
+    list-style-type: none;
+}
+
+.lista__link {
+    color: var(--cor-principal);
+    text-decoration: none;
+}
+
+.lista__link a {
+    color: var(--cor-principal);
+    text-decoration: none;
+}
+
+.rodape__texto {
+    font-size: 0.88rem;
+    color: var(--cor-secundaria);
+}
